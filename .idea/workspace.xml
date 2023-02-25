@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3ec78f7f-77a9-4268-b7e5-1914afbef231" name="Changes" comment="Lab5.exercise2/3/4">
+    <list default="true" id="3ec78f7f-77a9-4268-b7e5-1914afbef231" name="Changes" comment="Lab6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab5/Lab5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab5/Lab5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab6/Lab6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab6/Lab6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677321440034</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lab5.exercise1/5/6/7">
+      <created>1677336854110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677336854110</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Lab6">
+      <created>1677337068467</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677337068467</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +122,8 @@
     <MESSAGE value="Lab4.exercise4/5/6" />
     <MESSAGE value="Lab5" />
     <MESSAGE value="Lab5.exercise2/3/4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab5.exercise2/3/4" />
+    <MESSAGE value="Lab5.exercise1/5/6/7" />
+    <MESSAGE value="Lab6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab6" />
   </component>
 </project>
