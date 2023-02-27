@@ -36,7 +36,7 @@ public class Lab4 {
         int y3 = i.nextInt();
         double ab = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
         double ac = Math.sqrt(Math.pow((x3 - x1), 2) + Math.pow((y3 - y1), 2));
-        if( ab < ac){
+        if( ab > ac){
             System.out.println("Точка C\n"+ "x = "+ x3 + "\n"+"y = " + y3 +"\n"+"Відстань до А = " + ac);
         }
         else {
@@ -71,7 +71,7 @@ public class Lab4 {
         int c = i.nextInt();
         int V1 = x * y * z;
         int V2 = a * b * c;
-        if (V2 >= V1){
+        if (V2 >= V1 && x < a && y < b && z < c){
             System.out.println("Ця коробка поміститься");
         }
         else
