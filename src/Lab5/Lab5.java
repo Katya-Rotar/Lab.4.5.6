@@ -30,7 +30,7 @@ public class Lab5 {
         int n = i.nextInt();
         double n1 = 0;
         for (int a = 1; a <= n; a++){
-            int division = 1 / n;
+            double division = (double) 1 / a;
             n1 += division;
         }
         System.out.println(n1);
@@ -107,16 +107,12 @@ public class Lab5 {
         System.out.println("- "+ ab);
         System.out.println("- "+ ba);
     }
-    private static void exercise7(Scanner i){
-        System.out.println("Введіть значення i:");
-        int i1 = i.nextInt();
-        System.out.println("Введіть значення j:");
-        int j = i.nextInt();
+    private static void exercise7(Scanner s){
         System.out.println("Введіть значення n:");
-        int n = i.nextInt();
+        int n = s.nextInt();
         int i1j = 0;
-        for (int N = 1; N <= n; N++){
-            int sum = 1 + i1 + j;
+        for (int i = 1, j = 1; i <= n && j <= n; i++, j++){
+            int sum = 1 + i + j;
             i1j += sum;
         }
         System.out.println("\n" + i1j);
