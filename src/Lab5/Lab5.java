@@ -56,11 +56,10 @@ public class Lab5 {
         int h = i.nextInt();
         int a2 = 0;
         int a3 = 0;
-        for (int a1 = a; a1 <= b; ){
+        for (int a1 = a; a1 <= b; a1 = a1 + h){
             System.out.println(a1);
             a2 += a1;
             a3++;
-            a1 = a1 + h;
             }
         int average = a2 / a3;
         System.out.println("\n"+ average);
