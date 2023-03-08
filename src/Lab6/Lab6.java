@@ -3,7 +3,7 @@ package Lab6;
 import java.util.Scanner;
 
 public class Lab6 {
-    protected void exercise1(Scanner i){
+    void exercise1(Scanner i){
         System.out.println("Введіть поточний курс");
         double currency = i.nextDouble();
         int x = 1;
@@ -13,7 +13,7 @@ public class Lab6 {
             x++;
         }
     }
-    protected void exercise2(Scanner i){
+    int exercise2(Scanner i){
         System.out.println("Введіть число а");
         int a = i.nextInt();
         int max = 0, n = 1;
@@ -23,31 +23,31 @@ public class Lab6 {
             }
             n++;
         }
-        System.out.println(max);
+        return max;
     }
-    protected void exercise3(Scanner i, int exid){
+    int exercise3(Scanner i){
         System.out.println("""
                 Введіть n цілих чисел
                 Щоб завершити введіть 0""");
         int sum = 0;
-        while (exid != 0){
+        while (true){
             int n = i.nextInt();
             sum += n;
             if (n == 0){
-                exid--;
+                break;
             }
         }
-        System.out.println(sum);
+        return sum;
     }
-    protected void exercise4(Scanner i, int exid){
+    int exercise4(Scanner i){
         System.out.println("""
                 Введіть n цілих чисел
                 Щоб завершити введіть 0""");
         int min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
-        while (exid != 0){
+        while (true){
             int n = i.nextInt();
             if (n == 0){
-                exid--;
+                break;
             }
             else {
                 if (n <= min) {
@@ -58,28 +58,27 @@ public class Lab6 {
                 }
             }
         }
-        System.out.println(max - min);
+        return max - min;
     }
-    protected void exercise5(Scanner i, int exid){
+    double exercise5(Scanner i){
         System.out.println("Введіть максимальне можливе значення");
         int n = i.nextInt();
         System.out.println("Введіть послідовність цілих чисел");
         int sum = 0, N = 0;
-        while (exid != n) {
+        while (true) {
             int n1 = i.nextInt();
             if (n1 >= 0) {
                 if (n1 >= n) {
-                    exid = n;
+                    break;
                 } else {
                     sum += n1;
                     N++;
                 }
             }
         }
-        double x = (double) sum / N;
-        System.out.println(x);
+        return (double) sum / N;
     }
-    protected void exercise6(Scanner i){
+    String exercise6(Scanner i){
         System.out.println("Введіть кількість студентів");
         int n = i.nextInt();
         int N = 1, sum = 0, N2 = 0;
@@ -93,7 +92,6 @@ public class Lab6 {
             N++;
         }
         double student2 = (double) sum / n;
-        System.out.println("Середній бал: " + student2);
-        System.out.println("Кількість п'ятірок: "+ N2);
+        return "Середній бал: " + student2 + "\nКількість п'ятірок: "+ N2;
     }
 }
