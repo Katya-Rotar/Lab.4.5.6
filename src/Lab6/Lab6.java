@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Lab6 {
     protected static void exercise1(Scanner i){
         System.out.println("Введіть поточний курс");
-        int currency = i.nextInt();
+        double currency = i.nextDouble();
         int x = 1;
         while (x <= 10){
-            System.out.println( x + " $ - " + (x * currency) + " ₴");
+            double x1 = (double) x * currency;
+            System.out.println( x + " $ - " + x1 + " ₴");
             x++;
         }
     }
