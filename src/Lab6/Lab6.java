@@ -3,7 +3,7 @@ package Lab6;
 import java.util.Scanner;
 
 public class Lab6 {
-    protected static void exercise1(Scanner i){
+    protected void exercise1(Scanner i){
         System.out.println("Введіть поточний курс");
         double currency = i.nextDouble();
         int x = 1;
@@ -13,7 +13,7 @@ public class Lab6 {
             x++;
         }
     }
-    protected static void exercise2(Scanner i){
+    protected void exercise2(Scanner i){
         System.out.println("Введіть число а");
         int a = i.nextInt();
         int max = 0, n = 1;
@@ -25,7 +25,7 @@ public class Lab6 {
         }
         System.out.println(max);
     }
-    protected static void exercise3(Scanner i, int exid){
+    protected void exercise3(Scanner i, int exid){
         System.out.println("""
                 Введіть n цілих чисел
                 Щоб завершити введіть 0""");
@@ -39,7 +39,7 @@ public class Lab6 {
         }
         System.out.println(sum);
     }
-    protected static void exercise4(Scanner i, int exid){
+    protected void exercise4(Scanner i, int exid){
         System.out.println("""
                 Введіть n цілих чисел
                 Щоб завершити введіть 0""");
@@ -60,7 +60,7 @@ public class Lab6 {
         }
         System.out.println(max - min);
     }
-    protected static void exercise5(Scanner i, int exid){
+    protected void exercise5(Scanner i, int exid){
         System.out.println("Введіть максимальне можливе значення");
         int n = i.nextInt();
         System.out.println("Введіть послідовність цілих чисел");
@@ -79,7 +79,7 @@ public class Lab6 {
         double x = (double) sum / N;
         System.out.println(x);
     }
-    protected static void exercise6(Scanner i){
+    protected void exercise6(Scanner i){
         System.out.println("Введіть кількість студентів");
         int n = i.nextInt();
         int N = 1, sum = 0, N2 = 0;
