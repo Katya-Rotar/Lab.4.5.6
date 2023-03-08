@@ -67,7 +67,7 @@ public class Lab6 {
         while (exid != n) {
             int n1 = i.nextInt();
             if (n1 >= 0) {
-                if (n1 == n || n1 > n) {
+                if (n1 >= n) {
                     exid = n;
                 } else {
                     sum += n1;
@@ -75,7 +75,8 @@ public class Lab6 {
                 }
             }
         }
-        System.out.println( sum / N );
+        double x = (double) sum / N;
+        System.out.println(x);
     }
     protected static void exercise6(Scanner i){
         System.out.println("Введіть кількість студентів");
